@@ -45,10 +45,15 @@ echo $usuario; */
 //$aluno->insert();
 //echo $aluno;
 
-// Atualiza os dados cadastrais de um determinadado usurio
+//// Atualizar os dados cadastrais de um determinadado usurio
+//$usuario = new Usuario();
+//$usuario->loadById(12);
+//$usuario->update("Formado","preca123");
+
 $usuario = new Usuario();
 $usuario->loadById(12);
-$usuario->update("Formado","preca123");
+$usuario->delete(12);
+
 
 echo ($usuario);
 
